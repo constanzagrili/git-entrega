@@ -1,0 +1,343 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #293744;
+    text-align: center; 
+}
+
+header img {
+    width: 8%;
+    margin-top: 20px;
+}
+
+header h1{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    color: #897B93;
+    text-align: center;
+}
+
+
+.navbar-nav{
+display:flex;
+justify-content: center;
+width: 100%;
+}
+
+.azul-bg{
+    background: #293744;
+}
+
+.tipografia {
+    text-decoration: none;
+    color: #FEF1C5;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.colores .nav-link{
+    color: #FEF1C5;
+}
+
+.colores .nav-link.active {
+    color: #897B93;
+}
+
+.colores .nav-link:hover {
+    font-size: 30px;
+}
+
+.navbar-toggler-icon {
+    background-color: #FEF1C5;
+    border-radius: 5px;
+  }
+
+.navbar-toggler:hover{
+    background-color: #FEF1C5;
+}
+
+
+main{
+    text-align: center;
+}
+
+.descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes img{
+    width: 6%;
+}
+
+.foto-principal img{
+    width: 30%;
+    margin: 20px 60px;
+}
+
+.foto-principal{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "yo yo yo yo"
+    "img img p p";
+}
+
+.yo{
+    background-color: #897B93;
+    border-radius: 5px;
+    grid-area: yo;
+}
+
+.descripcion img{
+    grid-area: img;
+}
+
+.descripcion p{
+    grid-area: p;
+}
+
+
+main h2{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px; 
+    margin: 5px;
+}
+
+main p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: right;
+    padding: 10px 20px; 
+    margin: 20px;
+    width: 400px;
+}
+
+main div button {
+    font-family: "Edu VIC WA NT Beginner";
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal; 
+    font-size: 20px;
+    text-align: center;
+    color: #897B93;
+    background-color: #FEF1C5;
+    display: inline-block;
+    border: none; 
+    padding: 10px 20px; 
+    margin: 20px;
+    cursor: pointer; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main div button:hover {
+    background-color: #293744; 
+}
+
+main div button:focus {
+    outline: none; 
+}
+
+main div a {
+    text-decoration: none;
+}
+
+.tienda h3 {
+    text-align: left;
+    font-family: "Edu VIC WA NT Beginner";
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 20px; 
+    margin: 20px;
+}
+
+.redes h3{
+    text-align: center;
+    font-family: "Edu VIC WA NT Beginner";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 25%;
+    margin: 10px;
+    border-style: none;
+}
+
+
+.libro-contenedor {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "libro libro libro libro"
+    "img img p p"
+    "botones botones botones botones"
+}
+
+.libro{
+    background-color: #897B93;
+    border-radius: 5px;
+    grid-area: libro;
+
+}
+
+.libro-descripcion {
+    display: flex;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.libro-descripcion img{
+    width: 20%;
+    margin: 20px 60px;
+    grid-area: img;
+}
+
+.libro-descripcion p{
+    grid-area: p;
+    text-align: center;
+}
+
+.botones{
+    grid-area: botones;
+}
+
+
+form{
+    width: 70%;
+    padding: 30px;
+    margin: 20px auto;
+    border: 2px solid #293744;
+    font-family: "Edu VIC WA NT Beginner";
+    font-size: 20px;
+    background-color: #b0a0bc;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #FEF1C5;
+    border-radius: 4px;
+  }
+
+ input[type="submit"] {
+    font-family: "Edu VIC WA NT Beginner";
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal; 
+    font-size: 20px;
+    color: #897B93;
+    background-color: #FEF1C5;
+    display: inline-block;
+    border: none; 
+    padding: 10px 20px; 
+    margin: 20px;
+    cursor: pointer; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #293744; 
+}
+
+input[type="submit"]:focus {
+    outline: none; 
+}
+
+
+footer{
+    background-color: #293744;
+    color: #FEF1C5;
+    text-align: right;
+    margin-top: auto;
+
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: #FEF1C5;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    }
+
+footer div img{
+        width: 6%;
+    }
+
+
+@media screen and (max-width:500px){
+    header h1{
+        font-size: 2.5rem;
+    }
+    main h2{
+        font-size: 1rem;
+    }
+}
